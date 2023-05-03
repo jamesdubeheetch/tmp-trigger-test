@@ -6,13 +6,13 @@ on:
       - master
       - main
     paths:
-      - ./**.go
-      - ./go.*
+      - '**.go'
+      - 'go.*'
       - Makefile
   pull_request:
     paths:
-      - ./**.go
-      - ./go.*
+      - '**.go'
+      - 'go.*'
       - Makefile
 
 jobs:
