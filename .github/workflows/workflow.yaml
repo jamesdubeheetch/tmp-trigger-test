@@ -1,0 +1,23 @@
+name: trigger
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - ./**.go
+      - ./go.*
+      - Makefile
+  pull_request:
+    paths:
+      - ./**.go
+      - ./go.*
+      - Makefile
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: build
+        run: echo "hello world"
