@@ -1,6 +1,6 @@
 package main
 
-# comment, should not trigger
+# comment, should trigger from PR
 
 func main() {
 }
